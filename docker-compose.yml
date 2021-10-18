@@ -1,0 +1,13 @@
+# For more information: https://laravel.com/docs/sail
+version: '3'
+services:
+    mysql:
+        image: 'mysql:8.0'
+        ports:
+            - '3306:3306'
+        environment:
+            MYSQL_ROOT_PASSWORD: 'passed'
+            MYSQL_DATABASE: 'laravel'
+            MYSQL_USER: 'laravel'
+            MYSQL_PASSWORD: 'passed'
+            MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
